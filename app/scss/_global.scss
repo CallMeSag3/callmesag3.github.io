@@ -1,0 +1,73 @@
+@import "./vars";
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: $mainText;
+}
+
+a {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+    color: $titleText;
+}
+
+h1,
+h2,
+h3,
+li {
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    &__fluid {
+        min-width: none;
+        padding-right: 45px;
+        margin: 0 auto;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex: 1 0 auto;
+}
+
+.button__link {
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 15px 86px;
+    background-color: #80a9bf;
+    color: #fff;
+    border-radius: 20px;
+    display: inline-block;
+    transition: all 1s ease;
+    &:hover {
+        background-color: #fff;
+        color: $titleText;
+    }
+}
